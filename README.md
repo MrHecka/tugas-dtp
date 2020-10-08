@@ -1,2 +1,0 @@
-# tugas-dtp
-Nama : Muhammad
