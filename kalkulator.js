@@ -1,40 +1,67 @@
-var input = require('input');
+function kali()
+{
 
-var rl = input.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+var kal = document.getElementById("kalkulator");
+var a = parseFloat(kal.satu.value);
+var b = parseFloat(kal.dua.value);
 
+var total = a * b;
 
-console.log("Kalkulator - Muhammad");
-console.log("___________");
-console.log("1.) Tambah(+)");
-console.log("2.) Kurang(-)");
-console.log("3.) Bagi(/)");
-console.log("4.) Kali(*)");
+kal.hasil.value = total;
+  console.log(kal.hasil.value)
+}
 
-rl.question("Pilihan anda : " ,function(pilihan){
-  console.log("Anda Memilih Menu  " + pilihan );
-  rl.question("Masukan Bilangan pertama : " ,function(jawabanpertama){
-   rl.question("Masukan Bilangan kedua : " ,function(jawabankedua){
-         console.log("-----------------------------------------");
-      console.log("Bilangan Pertama Anda  " + jawabanpertama );
-      console.log("Bilangan Kedua Anda  " + jawabankedua );
-         console.log("-----------------------------------------");
-      if(pilihan == "1"){
-       console.log("Hasilnya :" +((jawabanpertama) + (jawabankedua)));
-      }else if(pilihan == "2"){
-       console.log("Hasilnya :" +((jawabanpertama) - (jawabankedua)));
-      }else if(pilihan == "3"){
-       console.log("Hasilnya :" +((jawabanpertama) / (jawabankedua)));
-      }else if(pilihan == "4"){
-       console.log("Hasilnya :" +((jawabanpertama) * (jawabankedua)));
-      }else{
-        console.log("Pilihan anda tidak tersedia");
-      }
-       
-     rl.close();
-   });     
-     });
-});
+function bagi()
+{
+
+var kal = document.getElementById("kalkulator");
+var a = parseFloat(kal.satu.value);
+var b = parseFloat(kal.dua.value);
+
+var total = a / b;
+
+kal.hasil.value = total;
+  console.log(kal.hasil.value)
+}
+
+function tambah()
+{
+
+var kal = document.getElementById("kalkulator");
+var a = parseFloat(kal.satu.value);
+var b = parseFloat(kal.dua.value);
+
+var total = a + b;
+
+kal.hasil.value = total;
+  console.log(kal.hasil.value)
+}
+
+function kurang()
+{
+
+var kal = document.getElementById("kalkulator");
+var a = parseFloat(kal.satu.value);
+var b = parseFloat(kal.dua.value);
+
+var total = a - b;
+
+kal.hasil.value = total;
+  console.log(kal.hasil.value)
+}
+
+ 
+
+function pangkat()
+{
+
+var frm = document.getElementById("frmKalkulator");
+var a = parseFloat(frm.satu.value);
+var b = parseFloat(frm.dua.value);
+
+var total = Math.pow(a,b);
+
+frm.hasil.value = total;
+  console.log(frm.hasil.value)
+}
 
