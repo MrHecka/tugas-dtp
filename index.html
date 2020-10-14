@@ -1,11 +1,43 @@
-<!DOCTYPE html>
 
 <html>
 <head>
     <title>Hacker - Muhammad</title>
 </head>
 <body>
-    <script src="percabangan2.js"></script>
+    
+  <script src="kalkulator.js"></script>
+
+<form id="kalkulator">
+
+<label>Angka 1</label>
+
+<input type="text" name="satu" size="10" /><br/>
+
+<label>Angka 2</label>
+
+<input type="text" name="dua" size="10" /><br/>
+
+<label>Hasil</label>
+
+<input type="text" name="hasil" size="10" disabled="true"/> <hr/>
+
+<div align="center">
+
+<input type="button" name="operasi" value="*" onclick="kali()"/>
+
+<input type="button" name="operasi" value="/" onclick="bagi()"/>
+
+<input type="button" name="operasi" value="+" onclick="tambah()"/>
+
+<input type="button" name="operasi" value="-" onclick="kurang()"/>
+
+<input type="button" name="operasi" value="^" onclick="pangkat()"/><br/>
+
+<input type="reset" name="disoperasi" value="batal" /></div>
+
+</form>
+  
 </body>
+  
   
   </html>
