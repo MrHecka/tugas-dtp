@@ -55,13 +55,13 @@ kal.hasil.value = total;
 function pangkat()
 {
 
-var frm = document.getElementById("frmKalkulator");
-var a = parseFloat(frm.satu.value);
-var b = parseFloat(frm.dua.value);
+var kal = document.getElementById("kalkulator");
+var a = parseFloat(kal.satu.value);
+var b = parseFloat(kal.dua.value);
 
 var total = Math.pow(a,b);
 
-frm.hasil.value = total;
-  console.log(frm.hasil.value)
+kal.hasil.value = total;
+  console.log(kal.hasil.value)
 }
 
